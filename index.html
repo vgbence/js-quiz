@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="icon" type="png" href="js-02.png"/>
+    <title>JavaScript Quiz</title>
+    <style>
+        input[name="q1"], 
+        input[name="q2"],
+        input[name="q3"],
+        input[name="q4"],
+        input[name="q5"] {
+	        accent-color:#f0ad4e ;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- top section -->
+    <div class="intro py-3 bg-white text-center">
+        <img src="./js-01.png" style="width: 30%">
+        <div class="container">
+            <h2 class="text-primary display-3 my-4"></h2>
+        </div>
+    </div>
+
+    <!-- result in % -->
+    <div class="result py-4 d-none bg-light text-center">
+        <div class="container lead">
+            <h2>You scored<span class="text-warning font-weight-italic display-4 p-3"></span></h2>
+            <h2 class="text-plus"></h2>
+        </div>
+    </div> 
+
+    <!-- quiz-section -->
+    <div class="quiz py-4 bg-secondary">
+        <div class="container">
+            <h2 class="my-5 text-warning">You have been challanged to a 5 question JS test!</h2>
+            <form class="quiz-form text-black">
+                <div class="my-5">
+                    <h4 class="font-weight-bold text-black">1. How many days it took Brendan Eich to write the language?</h4>
+                    <div class="form-check my-2 text-black">
+                        <input type="radio" name="q1" value="A" default="checked">
+                        <label class="form-check-label">7 days</label>
+                    </div>
+                    <div class="form-check my-2 text-black">
+                        <input type="radio" name="q1" value="B">
+                        <label class="form-check-label">10 days</label>
+                    </div>
+                    <div class="form-check my-2 text-black">
+                        <input type="radio" name="q1" value="C">
+                        <label class="form-check-label">21 days</label>
+                    </div>
+                </div>
+                <div class="my-5">
+                    <h4 class="font-weight-bold text-black">2. ECMAScript 1 was released in?</h4>
+                    <div class="form-check my-2 text-black">
+                        <input type="radio" name="q2" value="A" default="checked">
+                        <label class="form-check-label">1995</label>
+                    </div>
+                    <div class="form-check my-2 text-black">
+                        <input type="radio" name="q2" value="B">
+                        <label class="form-check-label">1996</label>
+                    </div>
+                    <div class="form-check my-2 text-black">
+                        <input type="radio" name="q2" value="C">
+                        <label class="form-check-label">1997</label>
+                    </div>
+                </div>
+                <div class="my-5">
+                    <h4 class="font-weight-bold text-black">3. What does “Ecma” mean?</h4>
+                    <div class="form-check my-2 text-black">
+                        <input type="radio" name="q3" value="A">
+                        <label class="form-check-label">European Computer Manufacturers Association</label>
+                    </div>
+                    <div class="form-check my-2 text-black">
+                        <input type="radio" name="q3" value="B">
+                        <label class="form-check-label">Enterprise Content Management Association</label>
+                    </div>
+                    <div class="form-check my-2 text-black">
+                        <input type="radio" name="q3" value="C">
+                        <label class="form-check-label">Electronic Component Manufacturers Association</label>
+                    </div>
+                </div>
+                <div class="my-5">
+                    <h4 class="font-weight-bold text-black">4. Which of the following is NOT a JavaScript object?</h4>
+                    <div class="form-check my-2 text-black">
+                        <input type="radio" name="q4" value="A">
+                        <label class="form-check-label">let obj = {}</label>
+                    </div>
+                    <div class="form-check my-2 text-black">
+                        <input type="radio" name="q4" value="B">
+                        <label class="form-check-label">let obj = new Object</label>
+                    </div>
+                    <div class="form-check my-2 text-black">
+                        <input type="radio" name="q4" value="C">
+                        <label class="form-check-label">let obj = { name = "Bilbo }"</label>
+                    </div>
+                </div>
+                <div class="my-5">
+                    <h4 class="font-weight-bold text-black">5. If the value of a variable is not planned to be changed later, the keyword we need is...</h4>
+                    <div class="form-check my-2 text-black">
+                        <input type="radio" name="q5" value="A">
+                        <label class="form-check-label">var</label>
+                    </div>
+                    <div class="form-check my-2 text-black">
+                        <input type="radio" name="q5" value="B">
+                        <label class="form-check-label">let</label>
+                    </div>
+                    <div class="form-check my-2 text-black">
+                        <input type="radio" name="q5" value="C">
+                        <label class="form-check-label">const</label>
+                    </div>
+                </div>
+                
+                <div class="text-center">
+                    <input type="submit" class="border border-dark border-4 btn btn-light shadow-lg p-3 mb-5 bg-warning rounded" value="Let's see my results" style="font-weight: bold; color: black">
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <script src="app.js"></script>  
+</body>
+</html>
